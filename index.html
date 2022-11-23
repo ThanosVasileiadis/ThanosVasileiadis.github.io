@@ -1,81 +1,297 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
-	<head>
-		<meta charset=“utf-8”>
-		<title> Thanos' Personal webpage </title>
-		<style>
-            body {
-				background-color: azure  ;
-				margin:0 10%;
-				font-family: sans-serif;
-            }
-            header {
-				text-align:center;
-				font-family: serif;
-			}
+<head>
 
-            h1 {
-                text-align: center;
-                font-family: serif;
-                font-weight: normal;
-                text-transform: uppercase;
-                border-bottom: medium;
-                margin-top: 30px;
-            }
-            h2 {
-				color:  aqua;
-				font-size:small;
-            }
-		</style>
-	</head>
+    <title> About me </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content=" Athanasios Vasileiadis, Mean Field Games, Financial Mathematics, Reinforcement Learning">
+    <meta name="description" content=" About me">
+    <meta name="author" content="Athanasios Vasileiadis">
 
-	<body>
-		<header>
-			<h1>More about WOFF</h1>
-			<p>by Jennifer Robbins, <time datetime="2017-11-11">November 11, 2017</time></p>
-		</header>
-		<main>
-			<h1> <img src="img/3IA logo.jpg" alt="logo" /> <br />  Black Goose Bistro </h1>
-			<h2>The Restaurant </h2>
-			<p>The Black goose Bistro offers casual lunch and dinner in a relaxed atmosphere<br /> This is going to be fun </p>
-			<hr /> I am learning how to make websites
-			<p>
-				<time datetime="1970-09-05T01:11:00">Sept. 5, 1970, 1:11a.m.</time>
-			</p>
-			<hr />
-			<p> This is a first link <a href="Link1.html">About </a> </p>
-			<p> This is a second link that opens in a different window <a href="Link2.html" target="_blank">About </a> </p>
-			<section>
-				<h2>Online Tutorials</h2>
-				<p>These are the best tutorials on the web.</p>
-				<ul>
-					<li>This is a test </li>
-					<li>This is a second test </li>
-				</ul>
-			</section>
-			<section>
-				<h1>Web Typography</h1>
-				<p>Back in 1997, there were competing font formats and tools for making them...</p>
-				<p>We now have a number of methods for using beautiful fonts on web pages...</p>
-				<aside>
-					<p>This is a test as well</p>
-					<ul>
-						<li><a href="http://typekit.com/">Typekit</a></li>
-						<li><a href="http://fonts.google.com">Google Fonts</a></li>
-					</ul>
-				</aside>
-				<p>Back in 1997, there were competing font formats and tools for making them...</p>
-				<p>We now have a number of methods for using beautiful fonts on web pages...</p>
-			</section>
-		</main>
-		<footer>
-			<p><small>Copyright &copy;2017 Jennifer Robbins.</small></p>
-			<nav>
-				<ul>
-					<li><a href="/">Previous</a></li>
-					<li><a href="/">Next</a></li>
-				</ul>
-			</nav>
-		</footer>
+
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="left-sidebar.html">About</a></li>
+            <li><a href="right-sidebar.html">Academic</a></li>
+            <li><a href="no-sidebar.html">Industry</a></li>
+            <li><a href="#">Blog</a> </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#">Translate</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="current"> <a href="#">English</a><li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Greek</a></li>
+                            
+                            
+
+                    </div>
+                </div>
+
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo container">
+            <div>
+                <p> Thanos Vasileiadis</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <section id="main">
+        <div class="container">
+            <p> Here is a link for my CV</p>
+            <p> Key phrase Motivated</p>
+            <h2 class="major"><span>My research interests </span></h2>
+            <div class="interests">
+
+                <div id="one" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, agjasdlfdjslfjas the long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="two" class="numbers">
+
+                    <div class="popup" onclick="myFunction2()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup2">
+                            <p>This is the text that will appear as explanation, long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="three" class="numbers">
+                    <div class="popup" onclick="myFunction3()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup3">
+                            <p>This is the text that will appear as explanation, the text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="four" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, long text an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="five" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="six" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="seven" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>
+                                This is the text that will appear as explanation,
+                                the long text needs an effective way to be presented.
+                                The longer the text the better it will apear.
+                                I need to make a short paragraph for each of the interests.
+                                This is is the part that really starts to get scientific and I can use my
+                                specialisation.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="eight" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        /* check it,to pass argument(string) in the fucntion*/
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+                <div id="nine" class="numbers">
+                    <div class="popup" onclick="myFunction()">
+                        Mean Field Games
+                        <span class="popuptext" id="myPopup">
+                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!div id="ten" class="numbers"><!/!div>
+            <!this is a comment >
+            <section class="box features">
+                <h2 class="major"><span>My Values </span></h2>
+                <div>
+                    <div class="row">
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                                <h3><a href="#">A Subheading</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                                <h3><a href="#">A Subheading</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                                <h3><a href="#">A Subheading</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                <h3><a href="#">Another Subheading</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                <h3><a href="#">And Another</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Feature -->
+                            <section class="box feature">
+                                <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                <h3><a href="#">And One More</a></h3>
+                                <p>
+                                    Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
+                                    lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
+                                </p>
+                            </section>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="My Values">
+                <h2 class="major"><span>My Skills </span></h2>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')">Math</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Code</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Finance & Economics</button>
+                </div>
+
+                <div id="London" class="tabcontent">
+                    <h3>Math</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <h3>Code</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <h3>Finance/Economics</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script>// When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+
+            popup.classList.toggle("show");
+        }
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+
+            popup.classList.toggle("show");
+        }
+
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+
+            popup.classList.toggle("show");
+        }
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }</script>
+    <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="jquery.dropotron.min.js"></script>
+
 </body>
 </html>
