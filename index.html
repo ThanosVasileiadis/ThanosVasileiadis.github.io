@@ -7,6 +7,9 @@
     <meta name="keywords" content=" Athanasios Vasileiadis, Mean Field Games, Financial Mathematics, Reinforcement Learning">
     <meta name="description" content=" About me">
     <meta name="author" content="Athanasios Vasileiadis">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;500&family=Dancing+Script:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
 
     <style>
@@ -22,27 +25,31 @@
             <li><a href="right-sidebar.html">Academic</a></li>
             <li><a href="no-sidebar.html">Industry</a></li>
             <li><a href="#">Blog</a> </li>
-            <li>
-                <div class="dropdown">
-                    <a href="#">Translate</a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li class="current"> <a href="#">English</a>
-                            <li>
-                            <li><a href="#">French</a></li>
-                            <li><a href="#">Greek</a></li>
-
-
-
-                    </div>
-                </div>
-
-            </li>
-
+           
+      
         </ul>
-    </nav>
+        <div class="dropdown">
+            
+            <button class="translate">
+            <span class="material-symbols-outlined">
+    translate
+</span>
+            Translate </button> 
+            <div class="dropdown-content">
+                <ul>
+                    <li class="current"> <a href="#">English</a>
+                    <li>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Greek</a></li>
+                </ul>
 
-    <!-- Header -->
+            </div>
+            
+        </div>
+            
+</nav>
+
+    <!-- Header --> 
     <header id="header">
         <div class="logo container">
             <div>
@@ -58,100 +65,86 @@
             <p> Here is a link for my CV</p>
             <p> Key phrase Motivated</p>
             <h2 class="major"><span>My research interests </span></h2>
-            <div class="interests">
+            <div class="Research Interests">
+                <button type="submit" class="btn" id="MFG" onclick="myFunctionOPEN('1')"> Mean Field Games </button>
+                <div class="popup" id="popup1">
+                    <h2> Mean Field Games - Mean Field Control </h2>
+                    <p>
+                        Modelling problems as MFGs especially in finance with systemic risk as common noise.
+                        Questions of convergence of N-player games to Mean-Field Limit.
+                        Randomised Equilibria. Master Equation. Selection of equilibria.
+                        Numerical methods. Learning equilibria efficiently. MFGs with partial information
 
-                <div id="one" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, agjasdlfdjslfjas the long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
-                </div>
-                <div id="two" class="numbers">
+                        <button type="button" class="btnclose" onclick="myFunctionCLOSE('1')">X</button>
+</div>
 
-                    <div class="popup" onclick="myFunction2()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup2">
-                            <p>This is the text that will appear as explanation, long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
-                </div>
-                <div id="three" class="numbers">
-                    <div class="popup" onclick="myFunction3()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup3">
-                            <p>This is the text that will appear as explanation, the text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
+                <button type="submit" class="btn" id="RL" onclick="myFunctionOPEN('2')"> Reinforcement learning  </button>
+                <div class="popup" id="popup2">
+                    <h2> Reinforcement Learning </h2>
+                    <p>
+                        RL in games. Convergence of MDPs. Mixed and correlated equilibria. Solving stochastic control problems using RL.
+                        Modelling of RL as stochastic control problems. Relaxed controls.
+                        Deep RL. Kernel based RL. Regret minimisation. Efficient exploration.
+                        Applications in Finance and Economics. Mean Field RL.
+                    </p>
+                    <button type="button" class="btnclose" onclick="myFunctionCLOSE('2')">X</button>
                 </div>
 
-                <div id="four" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, long text an effective way to be presented  </p>
-                        </span>
-                    </div>
+                <button type="submit" class="btn" id="NN" onclick="myFunctionOPEN('3')">
+                    Neural Network Approximations
+                </button>
+                <div class="popup" id="popup3">
+                    <h2> Neural Network Approximations  </h2>
+                    <p>
+                        ANN. RNN. Stochastic Approximation.
+                        Dynamical systems and Mean-Field interpretation. Theoretical guarantees for approximations.
+                    </p>
+                   
+                    <button type="button" class="btnclose" onclick="myFunctionCLOSE('3')">X</button>
                 </div>
 
-                <div id="five" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
+                <button type="submit" class="btn" id="Options" onclick="myFunctionOPEN('5')"> Option Pricing  </button>
+                <div class="popup" id="popup5">
+                    <h2> Option Pricing and Volatility Modelling   </h2>
+                    <p>
+                        Solving the curse of dimensionality using machine learning. Complex products.
+                        Interests rate models. Incomplete market pricing. Value adjustments. Maliavin Calculus
+                    </p>
+                    <p>
+                        Stochastic models. Calibration of volatility surface. Machine Learning methods for volatility
+                    </p>
+                    <button type="button" class="btnclose" onclick="myFunctionCLOSE('5')">X</button>
                 </div>
-                <div id="six" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
+
+                <button type="submit" class="btn" id="SA" onclick="myFunctionOPEN('6')"> Stochastic Analysis </button>
+                <div class="popup" id="popup6">
+                    <h2> Stochastic Analysis and Stochastic Control </h2>
+                    <p>
+                        Fractional Browninan Motion. Stochastic Processes with memory.
+                        Rough SDEs. Probabilistic Numerical methods. Applications.
+                    </p>
+                    <p>
+                        Stochastic control. Optimal stoping problem. Hamilton-Jacobi-Bellman PDE
+                    </p>
+                    <button type="button" class="btnclose" onclick="myFunctionCLOSE('6')">X</button>
                 </div>
-                <div id="seven" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>
-                                This is the text that will appear as explanation,
-                                the long text needs an effective way to be presented.
-                                The longer the text the better it will apear.
-                                I need to make a short paragraph for each of the interests.
-                                This is is the part that really starts to get scientific and I can use my
-                                specialisation.
-                            </p>
-                        </span>
-                    </div>
+
+                <button type="submit" class="btn" id="ML" onclick="myFunctionOPEN('7')"> Machine Learning  </button>
+                <div class="popup" id="popup7">
+                    <h2> Machine Learining </h2>
+                    <p>
+                        Self-supervised ML. Clustering. Data Analysis. Applications in Finance. Probabilistic ML.
+                    </p>
+                    <button type="button" class="btnclose" onclick="myFunctionCLOSE('7')">X</button>
                 </div>
-                <div id="eight" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        /* check it,to pass argument(string) in the fucntion*/
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
-                </div>
-                <div id="nine" class="numbers">
-                    <div class="popup" onclick="myFunction()">
-                        Mean Field Games
-                        <span class="popuptext" id="myPopup">
-                            <p>This is the text that will appear as explanation, the long text needs an effective way to be presented  </p>
-                        </span>
-                    </div>
-                </div>
+
             </div>
 
-            <!div id="ten" class="numbers"><!/!div>
-            <!this is a comment >
             <section class="box features">
                 <h2 class="major"><span>My Values </span></h2>
 
                 <div class="slideshow-container">
-                    
+
 
                     <div class="mySlides fade">
 
@@ -236,38 +229,123 @@
                 <div id="London" class="tabcontent">
                     <h3>Math</h3>
                     <p>London is the capital city of England.</p>
+
+                    <div class="skillrow">
+                        <div class="skillcolumn" style="background-color:#bbb;">
+                            
+                            <ul class="skillslist">
+                                <li>Stochastic analysis</li>
+                                <li>Stochastic control</li>
+                                <li>Probability theory</li>
+                                <li>Mean Filed thory </li>
+                                <li>Dynamical System and Chaos Theory </li>
+                                <li>Optimal control</li>
+                                <li>BSDEs</li>
+                            </ul>
+                        </div>
+                        <div class="skillcolumn" style="background-color:#bbb;">
+                            
+
+                            <ul class="skillslist">
+                                <li>Partial Differential Equations</li>
+                                <li>Numerical Probability</li>
+                                <li>Simulation</li>
+                                <li>Game Theory</li>
+                                <li>Approximation Theory</li>
+                                <li>Numerical Methods</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="Paris" class="tabcontent">
                     <h3>Code</h3>
                     <p>Paris is the capital of France.</p>
+
+                    <div class="skillrow">
+                        <div class="skillcolumn" style="background-color:#bbb;">
+
+                            <ul class="skillslist">
+                                <li>Python, R </li>
+                                <li>Tensorflow: Sequential, Functional , Subclassing, Probablistic</li>
+                                <li>Pandas </li>
+                                <li>Statistical Learning</li>
+                                <li>Regression </li>
+                                <li>Inference </li>
+                                <li>Statistical testing</li>
+                                <li>Time Series: ARIMA, ARCH-GARCH, VAR, forecasting, causality, co-integration </li>
+                            </ul>
+                        </div>
+                        <div class="skillcolumn" style="background-color:#bbb;">
+
+
+                            <ul class="skillslist">
+                                <li>Neural Networks</li>
+                                <li>Reinforcement Learning</li>
+                                <li>Jax/coax</li>
+                                <li>OpenGym</li>
+                                <li>Optimisation</li>
+                                <li>HTML/CSS/Javascritp</li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Finance/Economics</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-            </section>
+                    <div id="Tokyo" class="tabcontent">
+                        <h3>Finance/Economics</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+
+                        <div class="skillrow">
+                            <div class="skillcolumn" style="background-color:#bbb;">
+
+                                <ul class="skillslist">
+                                    <li>Option Pricing  </li>
+                                    <li>Volatility Modelling</li>
+                                    <li>Risk Management </li>
+                                    <li>Valuation</li>
+                                    <li>Financial Econometrics </li>
+                                    <li>Capital Markets Theory </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="skillcolumn" style="background-color:#bbb;">
+
+
+                                <ul class="skillslist">
+                                    <li>Corporate Finance</li>
+                                    <li>General Equilibrium Models </li>
+                                    <li>Dynamic Macroeconomics</li>
+                                    <li>Microeconomics</li>
+                                    <li>Machine Learning in Finance</li>
+                                    
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    </section>
         </div>
     </section>
 
-    <script>// When the user clicks on div, open the popup
-        function myFunction() {
-            var popup = document.getElementById("myPopup");
 
-            popup.classList.toggle("show");
-        }
-        function myFunction2() {
-            var popup = document.getElementById("myPopup2");
+    <script>
+        function myFunctionOPEN(a) {
+            id = 'popup'+a
+            var popup = document.getElementById(id);
 
-            popup.classList.toggle("show");
-        }
+            popup.classList.add("open-popup");
+        } function myFunctionCLOSE(a) {
+            id = 'popup'+a
+            var popup = document.getElementById(id);
 
-        function myFunction3() {
-            var popup = document.getElementById("myPopup3");
+            popup.classList.remove("open-popup");
+        }</script>
 
-            popup.classList.toggle("show");
-        }
+    <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -281,7 +359,7 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }</script>
-   
+
     <script>let slideIndex = 1;
         showSlides(slideIndex);
 
