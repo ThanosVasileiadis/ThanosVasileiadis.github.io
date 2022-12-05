@@ -36,13 +36,29 @@ body {
     background: #fff;
     margin: 0 auto;
 }
-
-    #header .logo {
-        position: relative;
-        text-align: center;
-        border-top: solid 5px #e7eae8;
-        
+    #header .pic {
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        bottom: 15%;
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
     }
+    #header .logoUCA {
+        display: inline-block;
+        position: absolute;
+        right: 4%;
+        bottom: 25%;
+        border-radius: 10px;
+        width: 350px;
+        height: 300px;
+    }
+#header .logo {
+    position: relative;
+    text-align: center;
+    border-top: solid 5px #e7eae8;
+}
 
         #header .logo div {
             background: #fff;
@@ -60,10 +76,24 @@ body {
             display: inline;
             color: #C1CAC5;
         }
-/* Nav */
+
+    #header .quote {
+        display: inline-block;
+        block-size: 3em 1em;
+        font-size: 13px;
+        
+        text-transform: none;
+        position: absolute;
+        left: 50%;
+    }
+    #header .quote .greek {
+        font-family: 'GFS Neohellenic', sans-serif;
+        font-size: 15px;
+    }
+        /* Nav */
 
 
-#nav {
+        #nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -197,54 +227,13 @@ body {
     width: 64em;
 }
 
-@media screen and (max-width: 1680px) {
-
-    .container {
-        width: 75em;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-
-    .container {
-        width: calc(100% - 100px);
-    }
-}
-
-@media screen and (max-width: 980px) {
-
-    .container {
-        width: calc(100% - 100px);
-    }
-
-}
-
-@media screen and (max-width: 736px) {
-
-    .container {
-        width: calc(100% - 40px);
-    }
-
-
-}
-
-@media screen and (max-width: 360px) {
-
-    .container {
-        width: calc(100% - 30px);
-    }
-    .open-popup {
-        top: 10em;
-    }
-}
-
 
 h2.major {
     position: relative;
     border-top: solid 5px #e7eae8;
     font-size: 1.65em;
     text-align: center;
-    margin: 2em 0 3em 0;
+    margin: 3em 0 3em 0;
     top: 0.775em;
 }
 
@@ -838,3 +827,43 @@ img {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
 }
 
+/* Responsive Part*/
+
+
+
+
+@media screen and (min-width: 360px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+    #header .pic {
+        display: none;
+    }
+    #header .logoUCA {
+        display: none;
+    }
+    }
+
+
+@media screen and (min-width: 683px) {
+
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 64em;
+    }
+    #header .pic {
+        display:inline-block;
+    }
+    #header .logoUCA {
+        display: inline-block;
+    }
+    #main {
+        font-family: Arial, Helvetica, sans-serif;
+    }
