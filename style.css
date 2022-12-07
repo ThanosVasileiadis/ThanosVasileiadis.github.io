@@ -17,6 +17,7 @@ section, summary, time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    
 }
 
 
@@ -30,26 +31,27 @@ body {
 #header {
     text-align: center;
     font-size: 4em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 900px;
     text-transform: uppercase;
-    padding: 1em 0;
+    padding: 2em 0;
     background: #fff;
     margin: 0 auto;
 }
-    #header .pic {
+    #main .pic {
         display: inline-block;
         position: absolute;
         left: 5%;
-        bottom: 15%;
+        
         border-radius: 10px;
         width: 300px;
         height: 400px;
     }
-    #header .logoUCA {
+    #main .logoUCA {
         display: inline-block;
         position: absolute;
         right: 4%;
-        bottom: 25%;
+        
         border-radius: 10px;
         width: 350px;
         height: 300px;
@@ -80,15 +82,16 @@ body {
     #header .quote {
         display: inline-block;
         block-size: 3em 1em;
-        font-size: 13px;
-        
+        font-size: 15px;
         text-transform: none;
         position: absolute;
-        left: 50%;
+        right: 10%;
     }
     #header .quote .greek {
         font-family: 'GFS Neohellenic', sans-serif;
         font-size: 15px;
+        font-style: italic;
+
     }
         /* Nav */
 
@@ -152,13 +155,13 @@ body {
         }
 
             #nav li:hover a, #nav li:hover span {
-                background: #C1CAC5;
+                background-color: #C1CAC5;
                 color: #fff;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             }
 
             #nav li.active a, #nav li.active span {
-                background: #C1CAC5;
+                background-color: #C1CAC5;
                 color: #fff;
             }
 
@@ -167,23 +170,37 @@ body {
             color: #fff;
         }
 
+        
 .translate {
-    color: blue;
-    font-size: 16px;
+    display: inline-flex;
+    background: transparent;
+    color: transparent;
+    flex-direction:column;
     
-    background-color: transparent;
     border: 0;
     font-family: 'Open Sans Condensed', sans-serif;
-    
+    box-shadow: 0;
+    top: 0;
 }
-
-.dropdown {
-    position: absolute;
-    display: inline-block;
-    right: 3em;
-    top: 2.1em;
-    font-family: 'Open Sans Condensed', sans-serif;
+   
+.flag {
+    display:block;
     
+    padding-top: 7px;
+    
+
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    
+    box-shadow: 0;
+    top: 0;
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*right: 3em;*/
+    /*top: 2.1em;*/
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .dropdown-content {
@@ -204,8 +221,10 @@ body {
     
 }
 
-/* Main */
 
+
+
+/* Main */
 #main {
     background: #fff;
     border-top: solid 5px #b1ddab;
@@ -213,28 +232,33 @@ body {
     border-top-width: 50px;
     border-bottom-width: 10px;
     padding: 6em 0 6em 0;
-    box-sizing:border-box;
-    width:100%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 
 /* Container */
 
 .container {
-    justify-content:center;
+    justify-content: center;
     margin: 1em auto;
     max-width: 100%;
     width: 64em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 
 h2.major {
     position: relative;
     border-top: solid 5px #e7eae8;
-    font-size: 1.65em;
+    font-size: 2.2em;
     text-align: center;
     margin: 3em 0 3em 0;
     top: 0.775em;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600px;
+    text-transform: uppercase;
 }
 
     h2.major span {
@@ -300,7 +324,7 @@ nav, footer {
 /* Popup section*/
 
 .Research Interests {
-    
+    padding: 10px;
     width: 100%;
     height: 600px;
     display: flex;
@@ -314,7 +338,7 @@ nav, footer {
 
 .btn {
     display: inline-flex;
-    position:relative;
+    position: relative;
     width: 280px;
     height: 180px;
     border: 0;
@@ -324,7 +348,8 @@ nav, footer {
     outline: none;
     cursor: pointer;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
     border-radius: 5px;
     justify-content: center;
     box-shadow: 1px 1px 5px 1px gray;
@@ -350,7 +375,7 @@ nav, footer {
 }
 
 #NN {
-    background-color: burlywood;
+    background-color: #fff2e6;
 }
 .btnclose {
     border: 0;
@@ -361,6 +386,7 @@ nav, footer {
     top: 0;
     right: 0;
 }
+
 
 .popup {
     width: 500px;
@@ -385,326 +411,11 @@ nav, footer {
 
 }
 
-    /* Row */
-    .row {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-items: stretch;
-}
-
-    .row > * {
-        box-sizing: border-box;
-    }
-
-    .row.gtr-uniform > * > :last-child {
-        margin-bottom: 0;
-    }
-
-    .row.aln-left {
-        justify-content: flex-start;
-    }
-
-    .row.aln-center {
-        justify-content: center;
-    }
-
-    .row.aln-right {
-        justify-content: flex-end;
-    }
-
-    .row.aln-top {
-        align-items: flex-start;
-    }
-
-    .row.aln-middle {
-        align-items: center;
-    }
-
-    .row.aln-bottom {
-        align-items: flex-end;
-    }
-
-    .row > .imp {
-        order: -1;
-    }
-
-    .row > .col-1 {
-        width: 8.33333%;
-    }
-
-    .row > .off-1 {
-        margin-left: 8.33333%;
-    }
-
-    .row > .col-2 {
-        width: 16.66667%;
-    }
-
-    .row > .off-2 {
-        margin-left: 16.66667%;
-    }
-
-    .row > .col-3 {
-        width: 25%;
-    }
-
-    .row > .off-3 {
-        margin-left: 25%;
-    }
-
-    .row > .col-4 {
-        width: 33.33333%;
-    }
-
-    .row > .off-4 {
-        margin-left: 33.33333%;
-    }
-
-    .row > .col-5 {
-        width: 41.66667%;
-    }
-
-    .row > .off-5 {
-        margin-left: 41.66667%;
-    }
-
-    .row > .col-6 {
-        width: 50%;
-    }
-
-    .row > .off-6 {
-        margin-left: 50%;
-    }
-
-    .row > .col-7 {
-        width: 58.33333%;
-    }
-
-    .row > .off-7 {
-        margin-left: 58.33333%;
-    }
-
-    .row > .col-8 {
-        width: 66.66667%;
-    }
-
-    .row > .off-8 {
-        margin-left: 66.66667%;
-    }
-
-    .row > .col-9 {
-        width: 75%;
-    }
-
-    .row > .off-9 {
-        margin-left: 75%;
-    }
-
-    .row > .col-10 {
-        width: 83.33333%;
-    }
-
-    .row > .off-10 {
-        margin-left: 83.33333%;
-    }
-
-    .row > .col-11 {
-        width: 91.66667%;
-    }
-
-    .row > .off-11 {
-        margin-left: 91.66667%;
-    }
-
-    .row > .col-12 {
-        width: 100%;
-    }
-
-    .row > .off-12 {
-        margin-left: 100%;
-    }
-
-    .row.gtr-0 {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-        .row.gtr-0 > * {
-            padding: 0px 0 0 0px;
-        }
-
-        .row.gtr-0.gtr-uniform {
-            margin-top: 0px;
-        }
-
-            .row.gtr-0.gtr-uniform > * {
-                padding-top: 0px;
-            }
-
-    .row.gtr-25 {
-        margin-top: -12.5px;
-        margin-left: -12.5px;
-    }
-
-        .row.gtr-25 > * {
-            padding: 12.5px 0 0 12.5px;
-        }
-
-        .row.gtr-25.gtr-uniform {
-            margin-top: -12.5px;
-        }
-
-            .row.gtr-25.gtr-uniform > * {
-                padding-top: 12.5px;
-            }
-
-    .row.gtr-50 {
-        margin-top: -25px;
-        margin-left: -25px;
-    }
-
-        .row.gtr-50 > * {
-            padding: 25px 0 0 25px;
-        }
-
-        .row.gtr-50.gtr-uniform {
-            margin-top: -25px;
-        }
-
-            .row.gtr-50.gtr-uniform > * {
-                padding-top: 25px;
-            }
-
-.row {
-    margin-top: -50px;
-    margin-left: -50px;
-}
-
-    .row > * {
-        padding: 50px 0 0 50px;
-    }
-
-    .row.gtr-uniform {
-        margin-top: -50px;
-    }
-
-        .row.gtr-uniform > * {
-            padding-top: 50px;
-        }
-
-    .row.gtr-150 {
-        margin-top: -75px;
-        margin-left: -75px;
-    }
-
-        .row.gtr-150 > * {
-            padding: 75px 0 0 75px;
-        }
-
-        .row.gtr-150.gtr-uniform {
-            margin-top: -75px;
-        }
-
-            .row.gtr-150.gtr-uniform > * {
-                padding-top: 75px;
-            }
-
-    .row.gtr-200 {
-        margin-top: -100px;
-        margin-left: -100px;
-    }
-
-        .row.gtr-200 > * {
-            padding: 100px 0 0 100px;
-        }
-
-        .row.gtr-200.gtr-uniform {
-            margin-top: -100px;
-        }
-
-            .row.gtr-200.gtr-uniform > * {
-                padding-top: 100px;
-            }
-box.feature {
-    text-align:center;
-}
-
 
 .My Values {
     text-align:center
 
 }
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    display: flex;
-    background-color: #ffffff;
-    justify-content: center;
-}
-
-    /* Style the buttons inside the tab */
-    .tab button {
-        color: gray;
-        background-color: inherit;
-        border-radius: 1em;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 6em;
-        transition: 0.3s;
-        font-size: 17px;
-    }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            color: black;
-        }
-
-        /* Create an active/current tablink class */
-        .tab button.active {
-            text-decoration: double;
-            color:black;
-        }
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    
-    border-top: none;
-    text-align: left;
-    
-}
-
-
-.skillrow {
-    display: flex;
-}
-
-/* Create two equal columns that sits next to each other */
-.skillcolumn {
-    flex: 50%;
-    padding: 10px;
-    
-}
-
-/*Skills */
-.skillslist {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-}
-
-    .skillslist li {
-        border: 1px solid #ddd; /* Add a thin border to each list item */
-        margin-top: -1px; /* Prevent double borders */
-        background-color: #f6f6f6; /* Add a grey background color */
-        padding: 12px; /* Add some padding */
-    }
-
-
-
 
 
 
@@ -722,6 +433,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+    padding-top: 15px;
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -821,11 +533,129 @@ img {
     }
 }
 
-/* Fonts icons etc*/
-
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    
 }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        color: gray;
+        background-color: inherit;
+        border-radius: 1em;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 6em;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            color: black;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            text-decoration: double;
+            color: black;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    text-align: left;
+}
+
+
+.skillrow {
+    display: flex;
+    gap: 5px;
+}
+
+/* Create two equal columns that sits next to each other */
+.skillcolumn {
+    flex: 50%;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+/*Skills */
+.skillslist {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    background-color: rgba(255, 255, 255, .85);
+    color: orangered;
+    font-weight: 500;
+}
+
+    .skillslist li {
+        /* Add a thin border to each list item */
+
+        margin-top: -1px; /* Prevent double borders */
+
+        padding: 12px; /* Add some padding */
+    }
+
+
+
+
+
+/*Footer */
+
+.footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #6b7770;
+}
+
+.footermenu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap:7px;
+    flex-direction: row;
+}
+    .footermenu li {
+        
+        padding: 5px;
+    }
+/* Copyright */
+
+#copyright {
+    display: inline-block;
+    background: #e7eae8;
+    padding: 0.75em 2em 0.75em 2em;
+    border-radius: 8px;
+    color: #8b9790;
+    margin: 4em 0 0 0;
+}
+
+    #copyright a {
+        color: inherit;
+    }
+
+    #copyright .menu {
+        margin: 0;
+    }
+
+        #copyright .menu li {
+            border-color: #C1CAC5;
+            border-width: 2px;
+            line-height: 1em;
+        }
+
+
+
 
 /* Responsive Part*/
 
@@ -837,10 +667,10 @@ img {
     .container {
         width: calc(100% - 30px);
     }
-    #header .pic {
+    #main .pic {
         display: none;
     }
-    #header .logoUCA {
+    #main .logoUCA {
         display: none;
     }
     }
@@ -858,10 +688,10 @@ img {
     .container {
         width: 64em;
     }
-    #header .pic {
+    #main .pic {
         display:inline-block;
     }
-    #header .logoUCA {
+    #main .logoUCA {
         display: inline-block;
     }
     #main {
