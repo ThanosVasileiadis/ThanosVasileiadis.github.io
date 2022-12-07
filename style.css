@@ -26,6 +26,12 @@ body {
     padding-top: 2.25em;
 }
 
+h2 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 500px;
+    font-size: 1.8em;
+}
+
 /* Header */
 
 #header {
